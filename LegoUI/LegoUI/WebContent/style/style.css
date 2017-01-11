@@ -1,0 +1,1209 @@
+@font-face {
+   font-family: ubuntu;
+   src: url(../libs/fonts/ubuntu-font-family-0.83/Ubuntu-R.ttf);
+}
+html{
+	width: 100% !important;
+    overflow-x: hidden;
+}
+body{
+	overflow-x: hidden;
+	font-family: ubuntu;
+	/* max-height: 100px !important;
+    overflow-y: scroll; */
+}
+@media (min-width : 375px) and (max-width : 767px) {
+	.bgImage{
+		background-image: url('../images/bg-iphone.png');
+	}
+	.legoLogo{
+		position: absolute;
+		top: 15%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 20%;
+		heigth: 20%;
+	}
+	.loginFrmIcons{
+		margin-bottom: -20%;
+		margin-left: 5%;
+		z-index: 100;
+	}
+	.loginForm{
+		border: 1px solid black;
+	    padding: 5%;
+	    background: black;
+	    opacity: 0.7;
+	    border-radius: 3%;
+	    top: 30%;
+	    position: absolute;
+	    width: 92%;
+	    left: 3%;
+		
+	}
+	.tntLogo{
+		width: 93%;
+	}
+	.loginFrmIcons {
+	       margin-bottom: -22%;
+	    margin-left: 5%;
+	    z-index: 100;
+	}
+	#userName, #pwd{
+	    height: 3em;
+    	border-radius: 0px;
+	    opacity: 1 !important;
+	    border: 0 none;
+	    border-bottom: 5px solid orange;
+	    font-size: 20px;
+	    font-weight: 500;
+	    color: white;
+	    background-color: #1f3b53;
+	    padding-left: 15%;
+	}
+	.orderList{
+		list-style-type: none;
+		padding-left: 0px;
+		margin-right: -10%;
+		/* height: 600px; */
+	    overflow-y: scroll;
+	    background-color: #EFEEEE;
+	    z-index: 1;
+	}
+	form#loginForm{
+		margin-top: 10%;
+	}
+	.searchField{
+		display: none;
+	}
+	.orderScreen {
+	    width: 101%;
+	    background-color: #ffdd11;
+	    height: 60px;
+	}
+	.glyphicon-align-justify {
+	    position: relative;
+	    font-size: 24px;
+	    right: 7%;
+	    top: 8px
+	}
+	.hdrStyle {
+	    position: relative;
+	    left: 7px !important;
+	}
+	.legoLogoOrdScrn{
+		width: 24px;
+		height: 60%;
+	  margin-left: -12px;
+	}
+	.tntImg {
+	    margin-left: 9px;
+	    width: 51%;
+	}
+	/* .searchIcon {
+	    position: inherit;
+	    left: 13%;
+	    cursor: pointer;
+	    width: 24px;
+	} */
+	.chartIcon {
+	    position: relative;
+    	width: 28px;
+    	top: 5px;
+	}
+	.searchIcon {
+	    width: 27px;
+	    height: 28px;
+	    margin: 5px;
+	    cursor: pointer;
+	    position: absolute;
+	    right: 27px;
+	}
+	.arrowStyle img {
+	    width: 18px;
+	    height: 18px;
+	    top: 17%;
+	    position: absolute;
+	    margin-left: 75%;
+	}
+	.timeRow{
+		margin-left: 31%;
+	}
+	.itemName{
+		font-weight: bold;
+	}
+	.statuDet{
+		font-weight: bold;
+    	margin-left: 18%;
+	}
+	.status, .bold {
+	    font-weight: bold;
+	    margin-left: 23%;
+	    position: absolute;
+	    margin-left: 43% !important;
+	    margin-top: -6%;
+	}
+	.shipDate{
+		left: 4%;
+	}
+	.shipStatus{
+	    position: absolute;
+	    margin-top: 0%;
+	}
+	.key {
+	    width: 47%;
+	    position: absolute;
+	}
+	.value {
+	    font-weight: bold;
+	    margin-left: 53%;
+	}
+	.itemsStyle span img {
+	    margin-top: 4%;
+	}
+	.hidePanel{
+		display: none
+	}
+	.backTo{
+		margin-right: 13px;
+    	font-size: 24px;
+	}
+	.timeLines{
+		left: 26px;
+   		position: relative;
+   		font-weight: bold;
+	}
+	.imgRow{
+		width: 40%;
+    	position: absolute;
+    	left: 24%;
+	}
+	.dateRow{
+		width: 10%;
+		position: absolute;
+	}
+	.connectors{
+		height: 54px;
+	}
+	.orderItem{
+		border-bottom: 1px solid #b5adad;
+		cursor: pointer;
+	}
+	.updateBtn, .updateBtn:hover, .updateBtn.active, .updateBtn:focus{
+    	margin-top: 10% !important;
+	}
+	.orderId{
+		color: #12598b;
+    	font-weight: bold;
+    	font-size: 15px;
+    	    top: 10%;
+    	    position: absolute;
+	}
+	.rightHrdIcon{
+		float: right;
+	    position: relative;
+	    top: 17%;
+	}
+	.rightHrdIcon img{
+		width: 90%;
+    	position: relative;
+    	margin-right: -45px;
+	}
+	.orderDet{
+		font-size: large;
+   		margin-top: -11px;
+    	position: absolute;
+	}
+	.orderDet span{
+		margin: -17px;
+	}
+	.description{
+		left: 69px;
+   		position: relative;
+	}
+	.navbar-nav{
+		margin: 0px;
+	}
+	.setting, .logout{
+		left: 38px;
+	}
+	.shippedDetIcons{
+		left: 22%;
+    	color: #e99a09;
+	}
+	.shippedIcons{
+		left: 10% !important;
+	    color: #e99a09;
+	    margin-top: 2% !important;
+	    cursor: pointer;
+	}
+	.mobileSrchFld{
+		height: 41px;
+	    width: 225px;
+	    border-radius: 50px;
+	    margin: 20px;
+	 
+	}
+	.searchIconMobile{
+		width: 27px;
+	    height: 28px;
+	    margin: 5px;
+	    cursor: pointer;
+	    position: absolute;
+	    right: 27px;
+	}
+	.mobileSearch{
+		background-color: blue;
+	    height: 78px;
+	    position: relative;
+	}
+	.hideSearch, .searchIcon{
+		display: none;
+	}
+	.mobileSrchFld:focus{
+		outline: 0;
+	}
+	.mobileSearch:before{
+		content:"";
+	   	position: absolute;
+	   	border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid blue;
+		top:-10px;
+		left: 84%;
+		
+	}
+	.chartDetails{
+		background-color: blue;
+	    width: 100% !important;
+	    position: absolute;
+	    top: 8%;
+	    z-index: 1000;
+	}
+	.chartDetails:before{
+		content:"";
+	   	position: absolute;
+	   	border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid blue;
+		top:-8px;
+		left: 92.6%;
+	}
+	
+}
+/* @media (max-width: 768px) { 
+	.bgImage{
+		background-image: url('../images/bg-iphone.png');
+	}
+	.legoLogo{
+		position: absolute;
+		top: 15%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 22%;
+		heigth: 20%;
+	}
+	.loginForm{
+		border: 1px solid black;
+		padding: 5%;
+		background: black;
+		opacity: 0.7;
+		border-radius: 3%;
+		top: 30%;
+		position: absolute;
+		width: 100% !important;
+    	left: 0% !important;
+		
+	}
+	#userName, #pwd{
+	    height: 3em;
+    	border-radius: 0px;
+	    opacity: 1 !important;
+	    border: 0 none;
+	    border-bottom: 5px solid orange;
+	    font-size: 20px;
+	    font-weight: 500;
+	    color: white;
+	    background-color: #1f3b53;
+	    padding-left: 15%;
+	}
+	.orderScreen{
+		width: 100%;
+		background-color: #e6c301;
+		height: 50px;
+	}
+} */
+@media (min-width: 768px) and (max-width: 992px) { 
+	.bgImage{
+		background-image: url('../images/bg-desktop.png');
+	}
+	.legoLogo{
+		position: absolute;
+		top: 15%;
+		left: 45%;
+		transform: translate(-50%, -50%);
+		width: 17%;
+		heigth: 11%;
+	}
+	.tntLogo{
+		width: 70%;
+		margin-left: 17%;
+	}
+	.loginFrmIcons {
+	    margin-bottom: -14%;
+	    margin-left: 5%;
+	    z-index: 100;
+	}
+	.loginForm{
+		    border: 1px solid black;
+    padding: 5%;
+    background: black;
+    opacity: 0.7;
+    border-radius: 3%;
+    top: 30%;
+    position: absolute;
+    left: 2%;
+    width: 95%;		
+	}
+	#userName, #pwd{
+	    height: 4em;
+    	border-radius: 0px;
+	    /* opacity: 1 !important; */
+	    border: 0 none;
+	    border-bottom: 5px solid orange;
+	    font-size: 20px;
+	    font-weight: 500;
+	    color: white;
+	    background-color: #1f3b53;
+	    padding-left: 15%;
+	}
+	.orderScreen{
+		width: 100%;
+		background-color: #e6c301;
+		height: 70px;
+	}
+	.orderList{
+		list-style-type: none;
+		padding-left: 0px;
+		margin-right: -10%;
+		height: 600px;
+	    overflow-y: scroll;
+	    background-color: #EFEEEE;
+	    z-index: 1;
+	}
+	#leftPanel{
+		width: 30%;
+		padding-right: 9px
+	}
+	.descrpStatus{
+		top: 15px;
+    	left: 25px;
+    	max-height: 120px;
+    	min-height: 90px;    	
+   		font-size: 13px;
+	}
+	.orderItem{
+		border-bottom: 1px solid #b5adad;
+		border-right: 1px solid #b5adad;
+		cursor: pointer;
+	}
+	.secHrd {
+    	height: 90px !important;
+	}
+	.value{
+		display: block;
+    	word-wrap: break-word;
+    	font-weight: bold;
+	}
+	.itemsStyle span img.leftStatusIcons{
+		position: absolute;
+	    height: 21px;
+	    width: 49px;
+	    left: 0px;
+	    top: 25%;
+	}
+	.arrowStyle img{
+		top: 24%;
+	    position: absolute;
+	    width: 21px;
+	    height: 21px;
+	    right: 10px;
+	}
+	#rightPanel{
+		width: 70%;
+	}
+	form#loginForm{
+		margin-top: 10%;
+	}
+	.orderScreen {
+	    width: 100%;
+	    background-color: #ffdd11;
+	    height: 60px;
+	}
+	.legoLogoOrdScrn{
+		width: 28px;
+	    height: 60%;
+	    margin-left: 18px;
+	    margin-right: 12px;
+	}
+	.glyphicon-align-justify{
+		font-size: 27px !important;
+   	    top: 8px !important;
+	}
+	.hdRight {
+	    position: relative;
+    	top: 5px;
+	}
+	.timeLines{
+		left: 26px;
+   		position: relative;
+   		font-weight: bold;
+	}
+	.imgRow{
+		width: 40%;
+    	position: absolute;
+    	left: 24%;
+	}
+	.dateRow{
+		width: 10%;
+		position: absolute;
+	}
+	.statusRow{
+		margin-left: 50%;
+    	margin-top: -19px;
+	}
+	.connectors{
+		height: 75px;
+		border-left: 1px solid gray !important;
+	}
+	.details{
+		margin-left: -6%;
+	}
+	.updateBtn{
+		margin-left: 6% !important;
+	}
+	.orderId{
+		color: #12598b;
+    	font-weight: bold;
+    	font-size: 13px;
+	}
+	.rightHrdIcon{
+		float: right;
+	    position: relative;
+	    top: 17%;
+	}
+	.rightHrdIcon img{
+		width: 70%;
+	}
+	.timeRow{
+		margin-left: 31%;
+	}
+	.itemName{
+		font-weight: bold;
+	}
+	.statuDet{
+		font-weight: bold;
+	}
+	.progressStep{
+		margin-left: -3%;
+    	border-left: 1px solid gray;
+	}
+	.tntImg{
+		    margin-top: 3px;
+    height: 25px;
+	}
+	.hdrLeft {
+	    left: 0px !important;
+	}
+	.setting, .logout{
+		left: 38px;
+	}
+	.shippedDetIcons{
+		color: #e99a09;
+   		display: inline;
+    	left: 20%;
+    	cursor: pointer;
+	}
+	.shippedIcons{
+		color: #e99a09;
+   		display: inline;
+    	left: 10%;
+    	cursor: pointer;
+	}
+	.mobileSearch, .searchIconMobile{
+		display: none;
+	}
+	.chartDetails{
+		background-color: blue;
+	    width: 50% !important;
+	    position: absolute;
+	    top: 6%;
+	    left: 50%;
+	    z-index: 1000;
+	}
+	.chartDetails:before{
+		content:"";
+	   	position: absolute;
+	   	border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid blue;
+		top:-10px;
+		left: 88.5%;
+	}
+	.shipDate{
+		left: 4%;
+	}
+	.shipStatus{
+	    position: absolute;
+	    margin-top: 0%;
+	}
+}
+@media (min-width: 950px) and (max-width: 1280px) {
+	.bgImage{
+		background-image: url('../images/bg-desktop.png');
+	}
+	.legoLogo{
+		position: absolute;
+	    top: 11%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    width: 11%;
+	   /*  height: 12%; */
+	}
+	.orderList{
+		list-style-type: none;
+		padding-left: 0px;
+		margin-right: -10%;
+		/* height: 600px; */
+	    /* overflow-y: scroll; */
+	    background-color: #EFEEEE;
+	    z-index: 1;
+	}
+	.glyphicon-align-justify {
+            font-size: 27px !important;
+    top: 8px !important;
+    left: -37px;
+	}
+	.legoLogoOrdScrn{
+		width: 28px;
+    	height: 60%;
+   		margin-left: -17px;
+   		margin-right: 12px;
+	}
+	.loginForm{
+		border: 1px solid black;
+	    padding: 4%;
+	    background: black;
+	    opacity: 0.7;
+	    border-radius: 3%;
+	    top: 21%;
+	    position: absolute;
+	    left: 12%;
+	    width: 77%;
+		
+	}
+	.tntLogo{
+		margin-left: 25%;
+	}
+	.loginFrmIcons {
+	    margin-bottom: -11%;
+	    margin-left: 5%;
+	    z-index: 100;
+	}
+	#userName, #pwd{
+	    height: 4em;
+    	border-radius: 0px;
+	    /* opacity: 1 !important; */
+	    border: 0 none;
+	    border-bottom: 5px solid orange;
+	    font-size: 20px;
+	    font-weight: 500;
+	    color: white;
+	    background-color: #1f3b53;
+	    padding-left: 15%;
+	}
+	.orderScreen{
+		width: 100%;
+		background-color: #e6c301;
+		height: 70px;
+	}
+	.itemsStyle{
+		padding: 5%;
+		position: relative;
+	}
+	form#loginForm{
+		margin-top: 10%;
+	}
+	.orderScreen {
+	    width: 100%;
+	    background-color: #ffdd11;
+	    height: 60px;
+	}
+	.itemsStyle span img.leftStatusIcons{
+		height: 21px;
+    	width: 49px;
+    	margin-top: 8%;
+	}
+	.arrowStyle img{
+		margin-top: 9%;
+	    width: 21px;
+	    height: 21px;
+	    right: 10px;
+	}
+	.descrpStatus{
+		top: 12px;
+   		font-size: 13px;
+   		margin-bottom: 10%;
+   		left: -2%;
+	}
+	.key {
+	    width: 47%;
+	}
+	.value {
+	    display: block;
+    	word-wrap: break-word;
+    	font-weight: bold;
+	}
+	.orderItem {
+	    border-bottom: 1px solid #b5adad;
+	    border-right: 1px solid #b5adad;
+	    cursor: pointer;
+	}
+	.details{
+		margin-left: -2%;
+	}
+	.imgRow{
+		width: 40%;
+    	position: absolute;
+    	left: 24%;
+	}
+	.dateRow{
+		width: 10%;
+		position: absolute;
+	}
+	.connectors{
+		height: 54px;
+	}
+	.timeRow{
+		margin-left: 31%;
+	}
+	.itemName{
+		font-weight: bold;
+	}
+	.statuDet{
+		font-weight: bold;
+	}
+	.progressStep{
+    	border-left: 1px solid gray;
+	}
+	.statusRow{
+		margin-left: 46%;
+    	margin-top: -4%;
+	}
+	#leftPanel{
+		height: 585px;
+	    overflow-y: scroll;
+	    overflow-x: hidden;
+	    background-color: #EFEEEE
+	}
+	#rightPanel{
+		padding-left: 0%;
+	}
+	.updateBtn, .updateBtn:hover, .updateBtn.active, .updateBtn:focus{
+		margin-left: 4%;
+	}
+	.orderId{
+		color: #12598b;
+    	font-weight: bold;
+    	font-size: 15px;
+	}
+	.rightHrdIcon{
+		float: right;
+	    position: relative;
+	    top: 17%;
+	}
+	.rightHrdIcon img{
+		width: 70%;
+	}
+	.orderDet{
+		font-size: xx-large;
+	}
+	.shippedDetIcons{
+		color: #e99a09;
+   		margin-left: 10%;
+	}
+	.shippedIcons{
+		color: #e99a09;
+   		margin-left: 6%;
+   		cursor: pointer;
+	}
+	.mobileSearch, .searchIconMobile{
+		display: none;
+	}
+	.chartDetails{
+		background-color: blue;
+	    width: 30% !important;
+	    position: absolute;
+	    top: 6.5%;
+	    left: 70%;
+	    z-index: 1000;
+	}
+	.chartDetails:before{
+		content:"";
+	   	position: absolute;
+	   	border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid blue;
+		top:-10px;
+		left: 88.5%;
+	}
+	.shipDate{
+		left: 4%;
+	}
+	.shipStatus{
+	    position: absolute;
+	    margin-top: 0%;
+	}
+	.rightSection{
+		overflow-y: scroll;
+   		height: 510px;
+	}
+}
+@media (min-width: 1281px) {
+	.bgImage{
+		background-image: url('../images/bg-desktop.png');
+	}
+	.setting, .logout{
+		left: 38px;
+	}
+	.loginFrmIcons {
+	    margin-bottom: -20%;
+	    margin-left: 5%;
+	    z-index: 100;
+	}
+	.legoLogo{
+		position: absolute;
+		top: 13%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 9%;
+		heigth: 9%;
+	}
+	.loginForm{
+		border: 1px solid black;
+		padding: 4%;
+		background: black;
+		opacity: 0.7;
+		border-radius: 3%;
+		top: 25%;
+		position: absolute;
+		left: 31%;
+	}
+	#userName, #pwd{
+	    height: 4em;
+    	border-radius: 0px;
+	    border: 0 none;
+	    border-bottom: 5px solid orange;
+	    font-size: 20px;
+	    font-weight: 500;
+	    color: white;
+	    background-color: #1f3b53;
+	    padding-left: 15%;
+	}
+	.orderScreen{
+		width: 101.1%;
+		background-color: #ffdd11;
+		height: 60px;
+	}
+	.orderList{
+		list-style-type: none;
+		padding-left: 0px;
+		margin-right: -10%;
+		height: 591px;
+	    overflow-y: scroll;
+	    background-color: #EFEEEE;
+	    z-index: 1;
+	}
+	.itemsStyle{
+		padding: 5%;
+		position: relative;
+	}
+	form#loginForm{
+		margin-top: 10%;
+	}
+	.glyphicon-align-justify {
+	    position: relative;
+	    font-size: 31px;
+	    left: -50px;
+	    margin: -2px;
+	}
+	.legoLogoOrdScrn{
+		width: 35px;
+	    height: 33px;
+	    position: absolute;
+	    left: -7px
+	}
+	.tntImg {
+	   width: 20%;
+    	margin-left: 1%;
+    	margin-top: -13px;
+	}
+	.hdrLeft{
+		position: relative;
+		left: 4%;
+	}
+	.orderItem {
+	    border-bottom: 1px solid #ddd;
+	    border-right: 1px solid #ddd;
+	    cursor: pointer;
+	}
+	.itemsStyle span img.leftStatusIcons{
+		height: 21px;
+    	width: 49px;
+    	margin-top: 9%;
+	}
+	.arrowStyle img{
+		margin-top: 9%;
+	    width: 21px;
+	    height: 21px;
+	    right: 10px;
+	}
+	.descrpStatus{
+		top: 17px;
+	    max-height: 120px;
+	    min-height: 80px;
+	    font-size: 13px;
+	}
+	.value {
+	    display: block;
+    	word-wrap: break-word;
+    	font-weight: bold;
+	}
+	.orderList{
+		list-style-type: none;
+		padding-left: 0px;
+		margin-right: -10%;
+		/* height: 600px; */
+	    overflow-y: scroll;
+	    background-color: #EFEEEE;
+	    z-index: 1;
+	}
+	.imgRow{
+		width: 40%;
+    	position: absolute;
+    	left: 24%;
+	}
+	.dateRow{
+		width: 10%;
+		position: absolute;
+	}
+	.statusRow{
+		margin-left: 41%;
+    	margin-top: -4%;
+	}
+	.timeRow{
+		margin-left: 31%;
+	}
+	.itemName{
+		font-weight: bold;
+	}
+	.progressStep{
+		border-left: 1px solid gray;
+	}
+	.connectors{
+		height: 54px;
+		border-left: 1px solid gray !important;
+	}
+	.updateBtn{
+		margin-right: 14% !important;
+   		margin-left: 15px;
+	}
+	.orderId{
+		color: #12598b;
+    	font-weight: bold;
+    	font-size: 15px;
+	}
+	.rightHrdIcon{
+		float: right;
+	    right: 20%;
+	    position: relative;
+	    top: 17%;
+	}
+	.rightHrdIcon img{
+		width: 70%;
+	}
+	.orderDet{
+		font-size: xx-large;
+	}
+	.shippedDetIcons, .shippedIcons{
+		color: #e99a09;
+   		margin-left: 5%;
+   		cursor: pointer;
+	}
+	.chartDetails{
+		background-color: blue;
+	    width: 36% !important;
+	    position: absolute;
+	    top: 9%;
+	    left: 64%;
+	    z-index: 1000;
+	}
+	.chartDetails:before{
+		content:"";
+	   	position: absolute;
+	   	border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid blue;
+		top:-10px;
+		left: 94%;
+	}
+	#rightPanel{
+		max-height: 580px !important;
+	    overflow-y: scroll;
+	    overflow-x: hidden;
+	    padding: 0px;
+	}
+	.rightSection{
+		overflow-y: scroll;
+   		height: 510px;
+	}
+}
+.error{
+	color: red;
+	font-weight: bold;
+}
+
+
+
+.searchField{
+	border-radius: 50px;
+	align: right;
+	width: 225px;
+    height: 32px;
+}
+
+
+.hdrStyle{
+	top: 20%;
+	position: relative;
+}
+.hdrLeft{
+	position: relative;
+	left: 4%;
+}
+.login-btn{
+	background-color: #e6c301;
+    color: black;
+    font-size: 17px;
+}
+.reset-btn{
+	color: black;
+    font-size: 17px;
+}
+/* Style for odered detailed view */
+.contentDiv{
+	top: 40%;
+	position: relative;
+	border: 1px solid black;
+}
+/*.orderList{
+	list-style-type: none;
+	padding-left: 0px;
+	margin-right: -10%;
+	height: 600px;
+    overflow-y: scroll;
+    background-color: #EFEEEE;
+    z-index: 1;
+}*/
+/* .orderItem{
+	border-bottom: 1px solid #DAD9D9;
+	border-right: 1px solid #DAD9D9;
+	padding: 10px 10px 10px 0px;
+	background-color: #EFEEEE;
+	cursor: pointer;
+} */
+.orderItem.Created{
+	background: url('../images/icon-status-blue.png') no-repeat 15px center;
+}
+.orderItem.Received{
+	background: url('../images/icon-status-blue.png') no-repeat 15px center;
+}
+.orderItem.Shipped{
+	background: url('../images/icon-status-blue.png') no-repeat 15px center;
+}
+.orderItem.Completed{
+	background: url('../images/icon-status-green.png') no-repeat 15px center;
+}
+
+.connectors{
+	border-left: 1px solid gray;
+	width: 1px;
+	margin-left: 10px;
+	position: absolute;
+	
+}
+.activeTab{
+	background-color: white !important;
+	border-right: 0px;
+}
+/*.itemsStyle{
+	padding: 5%;
+	position: relative;
+}*/
+
+.month{
+	font-weight: bold;
+	font-size: 18px;
+	/* width: 20px;
+  	height: 20px;
+  	border-radius: 50%;
+  	color: #fff;
+  	line-height: 500px;
+  	text-align: center;
+  	background: #EFEEEE; */
+}
+/* #leftPanel{
+	height: 590px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #EFEEEE;
+} */
+.secHrd{
+	height: 80px;
+	z-index: -1;
+	margin-left: -1px;
+	color: #FCF8F7;
+	background-color: #5DADE2;
+}
+/* .secHrd.Shipped{
+	border-top: 1px solid white;
+	background-color: #ffdd11;
+} */
+.secHrd.Completed{
+	background-color: #4AE747 !important;
+}
+.secHrd.Delayed{
+	background-color: red !important;
+}
+.rightHrdDel{
+	position: absolute;
+	top: 30%;
+	left: 4%;
+}
+
+.rightHrdDel:nth-child(1){
+	font-size: 19px
+}
+
+.spinner{
+	top: 250% !important;
+}
+/* .progressStep{
+	border-left: 1px solid #B2BABB;
+	left: 20px;
+} */
+.items{
+	margin-left: 8%;
+}
+.errorList{
+	margin: 15px 0px 0px 15px;
+}
+.updateBtn, .updateBtn:hover, .updateBtn.active, .updateBtn:focus{
+	background-color: #0067b0;
+	color: white;
+	width: 138px;
+    height: 32px;
+    opacity: 0.75;
+    font-size: 15px;
+    margin-top: 3%;
+    margin-right: 7%;
+}
+.glyphicon-plus-sign{
+	font-size: 17px;
+}
+.modal-header{
+    background-color: #5DADE2;
+}
+.hideArrow{
+	display: none; 
+}
+.searchField:focus{
+	outline: 0;
+}
+
+.less{
+	height: 65px;
+}
+.medium{
+	height: 80px;
+}
+.large{
+	height: 95px;
+}
+.Xlarge{
+	height: 110px;
+}
+.imgRow .dlyedBrdStyle{
+	border-left: 2px dotted red !important;
+}
+.statusUpdIcon, .radioBtnCls{
+	margin: 10px 10px 10px 10px;
+}
+.searchIcon, .chartIcon{
+	cursor: pointer;
+}
+.chartContents{
+	display: none;
+}
+.nav-tabs {
+    border-bottom: 1px solid blue !important;
+}
+.nav-tabs>li{
+	margin: 13px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover,.nav>li>a:focus, .nav>li>a:hover {
+    color: white !important;
+    cursor: pointer;
+    background-color: blue;
+    border: 1px solid blue;
+    border-bottom-color: transparent;
+    opacity: 1;
+}
+.nav-tabs>li>a, .nav>li>a:hover{
+	color: white !important;
+	opacity: 0.6;
+}
+.nav>li:nth-child(2){
+	border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.contentArea{
+	background-color: white !important;
+	margin: 10px 10px 25px 10px;
+}
+.progress{
+	width: 85%;
+    margin: 5%;
+    border-radius: 13px;
+    height: 30px;
+}
+.countDiv{
+	font-size: 25px;
+	font-weight: bold;
+	color: #337ab7;
+}
+.countDiv.Delayed{
+	color:#d9534f !important;
+}
+.countDiv.Completed{
+	color:#5cb85c !important;
+}
+.statusDiv{
+	color: gray;
+	font-size: 14px;
+	font-weight: bold;
+}
+.shippingHistry{
+	font-weight: bold;
+	text-decoration: underline;
+}

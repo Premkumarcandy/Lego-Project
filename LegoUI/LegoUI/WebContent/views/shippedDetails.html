@@ -1,0 +1,27 @@
+
+<div class="modal-header">
+	<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+	<h4 class="modal-title" id="modal-title">Shipping Details</h4>
+</div>
+
+<div class="modal-body" id="modal-body">
+    
+    <div>
+    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    		<span class="col-xs-6 col-sm-4 col-md-4 col-lg-4">Tracking Id :</span><span class="col-xs-6 col-sm-8 col-md-8 col-lg-8">{{shippedDetails.trackingId}}</span>
+    	</div>
+    	<div>
+    		<div class="shippingHistry"><span><br/><br/>Shipping History : </span><br/><br/></div>
+    		<div ng-repeat="lineItem in shippedDetails.trackingDetailsDto" ng-class="getHeightCls(lineItem, $index);">
+	  			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 shipDate"><div class="dateRow"><span class="month">{{lineItem.date}}</span><br/>{{lineItem.month}}</div></div>
+	  			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><img src="images/{{getImage(lineItem.status)}}"></img><div ng-if ="!$last" class="connectors" ng-class="getHeightCls(lineItem, $index)"></div></div>
+	  			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><span class="shipStatus"> {{lineItem.status}}</span></div>
+	  		</div>
+    	</div>
+    </div>
+    <br/><br/>
+</div>
+<div class="modal-footer">
+	<button class="btn btn-default" type="button" ng-click="close()">Close</button>
+</div>
+

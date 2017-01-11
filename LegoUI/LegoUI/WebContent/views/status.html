@@ -1,0 +1,104 @@
+<style>
+.bgImage{
+	background-image: none;
+}
+</style>
+<div class="orderScreen">
+	<div class="hdrStyle">
+		<span class="hdrLeft">
+	    <div class="nav navbar-nav">
+	        <div class="dropdown">
+	          <span class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-align-justify"></span></span>
+	          <ul class="dropdown-menu">
+	            <li><a>Settings <span class="glyphicon glyphicon-cog setting"></span></a></li>
+	            <li class="divider"></li>
+	            <li><a href="#/login">Sign Out <span class="glyphicon glyphicon-log-out logout"></span></a></li>
+	          </ul>
+	        </div>
+	      </div>
+			<img src="images/logo-lego.png" alt="" class="legoLogoOrdScrn"/>
+			<img src="images/logo-TnT-small.png" alt="" class="tntImg"/>
+		</span>
+		<!-- <span class="hdRight pull-right">
+			<input type="text" class="searchField" placeholder="  PO / Mould / Art Number" class="pull-right hidden-sm" ng-model="search"/>
+			<img src="images/icon-search.png" class="searchIcon" ng-click="orderSearch(search)"/>
+			<img src="images/icon-chart.png" class="chartIcon"/>
+		</span> -->
+	</div>
+</div>
+<!-- <div class="row">
+  <div class="col-sm-3 col-md-3 col-lg-3" id="leftPanel" ng-if="showLeftPanel">
+  		<ul class="orderList" id="orderList">
+			<li ng-if="ordersList.length > 0" ng-repeat="orderDetails in ordersList" class="orderItem col-sm-12 col-md-12 col-lg-12" ng-click="populateDetails(orderDetails, $index);" ng-class="{activeTab: $index == selected}">
+				<span class="itemsStyle">
+					<span ng-if="(orderDetails.status != 'Completed') && (orderDetails.status != 'Delayed')"><img src="images/icon-status-blue.png" alt="" class="col-md-2 col-lg-2 leftStatusIcons"/></span>
+					<span ng-if="orderDetails.status == 'Completed'"><img src="images/icon-status-green.png" alt="" class="col-md-2 col-lg-2 leftStatusIcons"/></span>
+					<span ng-if="orderDetails.status == 'Delayed'"><img src="images/icon-status-red.png" alt="" class="col-md-2 col-lg-2 leftStatusIcons"/></span>
+					<span class="col-sm-8 col-md-8 col-lg-8 descrpStatus">
+						<span class="orderId">{{orderDetails.orderId}}</span>
+						<div><span class="description">{{orderDetails.description}}</span><span ng-if="orderDetails.status == 'Shipped'" class="glyphicon glyphicon-info-sign shippedDetIcons" popoverHTML></span></div>
+					</span >
+					<span class="arrowStyle"><img src="images/icon-arrow-right.png" alt=""/></span>
+				</span>
+			</li>
+		</ul>
+  </div>
+  <div class="col-sm-9 col-md-9 col-lg-9" id="rightPanel" ng-if="showRightPanel">
+  		<div class="col-sm-12 col-md-12 col-lg-12 secHrd" ng-class="orderItem.status" >
+  			<div class="rightHrdDel"><span  class="backTo glyphicon glyphicon-chevron-left" ng-click="displayList();" ng-class="{hideArrow:hideArrow}"></span><span class="orderDet">{{orderItem.orderId}} - </span><span>{{orderItem.description}}</span></div>
+  			<div class="rightHrdIcon"><img src="images/{{getUserIcon(orderItem.status)}}" alt=""/></div>
+  		</div>
+  		<div class="col-sm-12 col-md-12 col-lg-12" ng-if="orderData.linedetailsesDto.length > 0">
+  			<span us-spinner="{radius:30, width:8, length: 16}"></span>
+  			<br/><br/>
+  			<div class="col-sm-5 col-md-5 col-lg-5 details" ng-if="isDone">
+  				<div class="col-sm-12 col-md-12 col-lg-12">Item Name : <span class="itemName">&nbsp; {{orderData.linedetailsesDto[0].lineDescription}}</span></div><br/><br/>
+  				<div class="col-sm-6 col-md-6 col-lg-6">
+  					<div><span class="key">Line Id</span><span class="value">{{orderData.linedetailsesDto[0].lineId}}</span></div><br/>
+  					<div><span class="key">Mould Number</span><span class="value">{{orderData.linedetailsesDto[0].mouldNo}}</span></div><br/>
+  					<div><span class="key">Status</span><span class="value">{{orderData.linedetailsesDto[0].status}}</span></div><br/>
+  					<div><span class="key">Quantity</span><span class="value">{{orderData.linedetailsesDto[0].quantity}}</span></div><br/>
+  					
+  				</div>
+  				<div class="col-sm-6 col-md-6 col-lg-6">
+  					<div><span class="key">Created At</span><span class="value">{{orderData.linedetailsesDto[0].createdAt}}</span></div><br/>
+  					<div><span class="key">Art No</span><span class="value">{{orderData.linedetailsesDto[0].artNo}}</span></div><br/>
+  					<div><span class="key">Unit Price</span><span class="value">{{orderData.linedetailsesDto[0].unitPrice}}</span></div><br/>
+  					<div><span class="key">Amount</span><span class="value">{{orderData.currency}}&nbsp;{{orderData.linedetailsesDto[0].unitPrice * orderData.linedetailsesDto[0].quantity}}</span></div>
+  				</div>
+  				
+  			</div>
+  			<div class="timeLines" ng-class="{hideArrow:hideArrow}"><span><br/><br/>Order time line : </span><br/><br/></div>
+	  		<div class="col-sm-7 col-md-7 col-lg-7 progressStep">
+	  			<div ng-if="isDone" class="items">
+	  				 <div class="row"  ng-repeat="lineItem in orderData.linedetailsesDto[0].orderStatusesDto" ng-class="getHeightCls(lineItem, $index);">
+	  					<div class="dateRow"><span class="month">{{lineItem.date}}</span><br/>{{lineItem.month}}</div>
+	  					<div class="imgRow"><img src="images/{{getImage(lineItem.status)}}"></img><div ng-if ="!$last" class="connectors" ng-class="getHeightCls(lineItem, $index)"></div></div>
+	  					<div class="timeRow">{{lineItem.time}}</div>
+	  					<div class="statusRow"><span class="status"></span><span class="bold"> {{lineItem.description}}</span></div>
+	  				</div>
+	  			</div>
+	  		</div>
+  		</div>
+  		<div class="row" ng-if="isDone"><button class="btn updateBtn" ng-click='updateStatus();'">Update Status  <span class="glyphicon glyphicon-plus-sign"></span></button></div><br/>
+
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				Modal content
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">{{title}}</h4>
+					</div>
+					<div class="modal-body">
+						<p>{{modalContent}}</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div> -->

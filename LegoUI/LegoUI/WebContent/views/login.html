@@ -1,0 +1,25 @@
+<img src="images/logo-lego.png" alt="" class="legoLogo"/>
+<div class="loginForm">
+	<img src="images/logo-TnT.png" alt="" class="tntLogo"/>
+	<div class="error"><br/>{{errorMsg}}</div>
+	<form name="loginForm" novalidate ng-submit="submitForm()" id="loginForm" autocomplete="off">
+		<div class="form-group row">
+		    <div class="">
+		    	<img src="images/icon-user.png" alt="" class="loginFrmIcons"/>
+		     	<input type="text" class="form-control" id="userName" name="userName" ng-model="user.userName" placeholder="Username" required>
+		     	<span class="error" ng-show="(loginForm.userName.$dirty || submitted) && loginForm.userName.$error.required">Enter the User Name</span>
+		    </div>
+	  	</div>
+	  	<div class="form-group row">
+		    <div class="">
+		    	<img src="images/icon-password.png" alt="" class="loginFrmIcons"/>
+		     	<input type="password" class="form-control" id="pwd" name="pwd" ng-model="user.pwd" placeholder="Password" required>
+		     	<span class="error" ng-show="(loginForm.pwd.$dirty || submitted) && loginForm.pwd.$error.required">Enter the Password</span>
+		    </div>
+	  	</div>
+	  <div class="form-group">
+	       <button type="submit" class="btn login-btn" >Login</button>
+		   <button type="reset" class="btn reset-btn" ng-click="resetForm()">Reset</button>
+	  </div>
+	</form> 
+</div>

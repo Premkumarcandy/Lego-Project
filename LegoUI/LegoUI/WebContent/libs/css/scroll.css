@@ -1,0 +1,20 @@
+.scrollbox-wrapper {
+    padding: 0 20px 20px 0;
+    margin: 50px auto 50px;
+}
+
+.orderList {
+    max-height: 130px;
+    background-color: #f9f9f9;
+}
+
+.orderList ul > li {
+    color: #777;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 0;
+}
+
+.orderList ul > li:first-child {
+    border-top: 1px solid #ccc;
+}
